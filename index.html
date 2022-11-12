@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--guardar todos los archivos en una carpeta llamada assets-->
+
+<!--llamar al html como index.html, al css como styles.css (usarlo en vez de directamente en la etiqueta styles) (de preferencia en una carpeta aparte)-->
+
+<!--se pueden crear versiones alternativas de las propiedades, en plan, h1.alternative, h1.alternative_pair, etc. aparte del original, para elegir eso en el html, se coloca class="alternative"-->
+
+<!--existe el atributo text-transform, sirve para que todas las letras de un parrafo se transformen a, x ejemplo, mayusculas, minusculas, etc. afecta a todas las variantes-->
+
+<!--pero, tambien se puede hacer que una variante hija no tenga el atributo de una padre o que lo tenga diferente, algo asi: text-transform: none, es sobreescritura-->
+
+<!--margin-top,buttom,left,right es otra propiedad importante-->
+
+<!--agregar el alt="" para dar explicacion de texto alternativo de elementos como imagenes, sirve para temas de accesibilidad de personas ciegas por ejemplo-->
+
+<!--usar w3schools para casi cualquier cosa-->
+
+<!--<a> es una etiqueta para colocar links o referencias, se puede añadir la propiedad target="" para que abra el link en una nueva pestaña/ventana-->
+
+<!--etiqueta <section></section> sirve para dividir secciones y organizar-->
+
+<!--para hacer listados, usar etiqueta <ul></ul>, para los elementos de lista <li></li>-->
+
+<!--para que una lista no tenga las viñeras, entrar al css y ecribir ul{}-->
+
+<!--para añadir imagenes usar etiqueta <img> y dentro de la misma etiqueta agregar src="" para indicar la ubicacion de la imagen (tambien usar alt="" para describir a detalle)-->
+
+<!--para importar estilos de una fuente externa como font-awesome, usar:   @import url('')    y pegar el link http entre las comillas (va en el css), tambien sirve para tipografias-->
+
+<!--en google fonts se pueden conseguir tipografias sin tener que descargarlas, solo con el @import-->
+
+<!--usar el atributo id="" en sections para identificar mas facilmente a qué se corresponde cada elemento-->
+
+
+
+<head>
+  <title>NoobNews</title>
+  <link rel="icon" href="C:\Users\Alumnos\Downloads\favicon.ico">
+  <meta name="author" content="NoobNews Team">
+  <meta name="description" content="NoobNews Official Landing Page SX41">
+  <meta name="keyword" content="NoobNews news, videos, content">
+  
+  <meta charset = "UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+  <style>
+    .espacioparrafos{
+      margin-left: 1%;
+    } 
+    
+    .restriccioncarrusel{
+      height: 40%;
+    }
+    
+    p{
+      font-size: 16px;
+      color: white;
+      font-family: Calibri;
+      text-size-adjust: 20px;
+
+    }
+
+    h1{
+      color: white;
+      margin-top: 1%;
+      font-family: Impact;
+    }
+
+    .todo{
+      background-color: #8A0101;
+    }
+    
+    
+  </style>
+  
+  
+</head>
+
+
+<body>
+  
+  <div class="todo">
+    
+    <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #DB0909;">
+      <div class="container-fluid">
+        <img src="C:\Users\Alumnos\Downloads\imago.png" style="height: 50px;">
+        
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Caracteristicas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Precios</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">VALORANT points gratis!</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Tarjeta prepago</a></li>
+                <li><a class="dropdown-item" href="#">Paypal</a></li>
+                <li><a class="dropdown-item" href="#">Tarjeta de credito</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="espacioparrafos">
+      
+      <h1>Noticias</h1>
+      
+    </div>
+    
+    
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="C:\Users\Alumnos\Downloads\elegel.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="C:\Users\Alumnos\Downloads\upc1v2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="C:\Users\Alumnos\Downloads\upc2v2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="C:\Users\Alumnos\Downloads\upc3v2.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+    
+    <br>
+    
+    <div class="espacioparrafos">
+      <p>“Wait, That's Illegal” is a meme that made its first appearance in 2015. This meme refers to a famous reaction image taken from the famous Halo-themed Red Vs. Blue. Reaction images include both gifs and images that represent a specific emotion in reaction to something said.</p>
+    </div>
+    
+    
+    
+    
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  
+</body>
+</html>
